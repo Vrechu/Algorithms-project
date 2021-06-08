@@ -47,3 +47,10 @@ C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\2.0\
 C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\2.0\assignment\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
 C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\2.0\assignment\obj\Debug\dcg.exe
 C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\2.0\assignment\obj\Debug\dcg.pdb
+C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\Algorithms project\assignment\bin\Debug\dcg.exe.config
+C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\Algorithms project\assignment\bin\Debug\dcg.exe
+C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\Algorithms project\assignment\bin\Debug\dcg.pdb
+C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\Algorithms project\assignment\obj\Debug\Algorithms.csproj.AssemblyReference.cache
+C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\Algorithms project\assignment\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
+C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\Algorithms project\assignment\obj\Debug\dcg.exe
+C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\Algorithms project\assignment\obj\Debug\dcg.pdb
