@@ -1,0 +1,49 @@
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\102_assignments\cmgt.algorithms.student\assignment\bin\Debug\dcg.exe.config
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\102_assignments\cmgt.algorithms.student\assignment\bin\Debug\dcg.exe
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\102_assignments\cmgt.algorithms.student\assignment\bin\Debug\dcg.pdb
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\102_assignments\cmgt.algorithms.student\assignment\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\102_assignments\cmgt.algorithms.student\assignment\obj\Debug\dcg.exe
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\102_assignments\cmgt.algorithms.student\assignment\obj\Debug\dcg.pdb
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\102_assignments\cmgt.algorithms.student\assignment\obj\Debug\Algorithms.csprojAssemblyReference.cache
+D:\data\saxion\courses_cmgt\1_4_algorithms\102_assignments\cmgt.algorithms.student\assignment\bin\Debug\dcg.exe.config
+D:\data\saxion\courses_cmgt\1_4_algorithms\102_assignments\cmgt.algorithms.student\assignment\bin\Debug\dcg.exe
+D:\data\saxion\courses_cmgt\1_4_algorithms\102_assignments\cmgt.algorithms.student\assignment\bin\Debug\dcg.pdb
+D:\data\saxion\courses_cmgt\1_4_algorithms\102_assignments\cmgt.algorithms.student\assignment\obj\Debug\Algorithms.csprojAssemblyReference.cache
+D:\data\saxion\courses_cmgt\1_4_algorithms\102_assignments\cmgt.algorithms.student\assignment\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
+D:\data\saxion\courses_cmgt\1_4_algorithms\102_assignments\cmgt.algorithms.student\assignment\obj\Debug\dcg.exe
+D:\data\saxion\courses_cmgt\1_4_algorithms\102_assignments\cmgt.algorithms.student\assignment\obj\Debug\dcg.pdb
+D:\School\Year 1\Kwartiel 4\Algorithms redo\cmgt.algorithms.student\assignment\bin\Debug\dcg.exe.config
+D:\School\Year 1\Kwartiel 4\Algorithms redo\cmgt.algorithms.student\assignment\bin\Debug\dcg.exe
+D:\School\Year 1\Kwartiel 4\Algorithms redo\cmgt.algorithms.student\assignment\bin\Debug\dcg.pdb
+D:\School\Year 1\Kwartiel 4\Algorithms redo\cmgt.algorithms.student\assignment\obj\Debug\Algorithms.csprojAssemblyReference.cache
+D:\School\Year 1\Kwartiel 4\Algorithms redo\cmgt.algorithms.student\assignment\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
+D:\School\Year 1\Kwartiel 4\Algorithms redo\cmgt.algorithms.student\assignment\obj\Debug\dcg.exe
+D:\School\Year 1\Kwartiel 4\Algorithms redo\cmgt.algorithms.student\assignment\obj\Debug\dcg.pdb
+C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\cmgt.algorithms.student\assignment\obj\Debug\dcg.exe
+C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\cmgt.algorithms.student\assignment\obj\Debug\dcg.pdb
+C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\cmgt.algorithms.student\assignment\bin\Debug\dcg.exe.config
+C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\cmgt.algorithms.student\assignment\bin\Debug\dcg.exe
+C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\cmgt.algorithms.student\assignment\bin\Debug\dcg.pdb
+C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\cmgt.algorithms.student\assignment\obj\Debug\Algorithms.csproj.AssemblyReference.cache
+C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\cmgt.algorithms.student\assignment\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
+D:\School\Year 1\Kwartiel 4\Algorithms redo\1.2\assignment\bin\Debug\dcg.exe.config
+D:\School\Year 1\Kwartiel 4\Algorithms redo\1.2\assignment\bin\Debug\dcg.exe
+D:\School\Year 1\Kwartiel 4\Algorithms redo\1.2\assignment\bin\Debug\dcg.pdb
+D:\School\Year 1\Kwartiel 4\Algorithms redo\1.2\assignment\obj\Debug\Algorithms.csprojAssemblyReference.cache
+D:\School\Year 1\Kwartiel 4\Algorithms redo\1.2\assignment\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
+D:\School\Year 1\Kwartiel 4\Algorithms redo\1.2\assignment\obj\Debug\dcg.exe
+D:\School\Year 1\Kwartiel 4\Algorithms redo\1.2\assignment\obj\Debug\dcg.pdb
+D:\School\Year 1\Kwartiel 4\Algorithms redo\1.3\assignment\bin\Debug\dcg.exe.config
+D:\School\Year 1\Kwartiel 4\Algorithms redo\1.3\assignment\bin\Debug\dcg.exe
+D:\School\Year 1\Kwartiel 4\Algorithms redo\1.3\assignment\bin\Debug\dcg.pdb
+D:\School\Year 1\Kwartiel 4\Algorithms redo\1.3\assignment\obj\Debug\Algorithms.csprojAssemblyReference.cache
+D:\School\Year 1\Kwartiel 4\Algorithms redo\1.3\assignment\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
+D:\School\Year 1\Kwartiel 4\Algorithms redo\1.3\assignment\obj\Debug\dcg.exe
+D:\School\Year 1\Kwartiel 4\Algorithms redo\1.3\assignment\obj\Debug\dcg.pdb
+C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\2.0\assignment\bin\Debug\dcg.exe.config
+C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\2.0\assignment\bin\Debug\dcg.exe
+C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\2.0\assignment\bin\Debug\dcg.pdb
+C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\2.0\assignment\obj\Debug\Algorithms.csproj.AssemblyReference.cache
+C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\2.0\assignment\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
+C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\2.0\assignment\obj\Debug\dcg.exe
+C:\Users\freek\OneDrive\Documenten\School\Year 1\Kwartiel 4\Algorithms redo\2.0\assignment\obj\Debug\dcg.pdb
