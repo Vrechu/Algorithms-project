@@ -146,8 +146,8 @@
     <Compile Include="sources\Program.cs" />
     <Compile Include="sources\Assignment\PathFinding\PathFinder.cs" />
     <Compile Include="sources\Solution\Assignment1\SufficientDungeon.cs" />
-    <Compile Include="sources\Solution\Assugnment2\SufficientAgent.cs" />
-    <Compile Include="sources\Solution\Assugnment2\SufficientNodeGraph.cs" />
+    <Compile Include="sources\Solution\Assignment2\OnGraphWayPointAgent.cs" />
+    <Compile Include="sources\Solution\Assignment2\SufficientNodeGraph.cs" />
     <Compile Include="sources\Util\Grid.cs" />
     <Compile Include="sources\Util\NodeLabelDrawer.cs" />
     <Compile Include="sources\Util\RectangleExtensions.cs" />

@@ -6,7 +6,7 @@ using System.Collections.Generic;
  * Very simple example of a nodegraphagent that walks directly to the node you clicked on,
  * ignoring walls, connections etc.
  */
-class SufficientAgent : NodeGraphAgent
+class OnGraphWayPointAgent : NodeGraphAgent
 {
 	//Current target to move towards
 	private Node _targetNode = null;
@@ -14,7 +14,7 @@ class SufficientAgent : NodeGraphAgent
 
 	private readonly List<Node> targetNodes = new List<Node>();
 
-	public SufficientAgent(NodeGraph pNodeGraph) : base(pNodeGraph)
+	public OnGraphWayPointAgent(NodeGraph pNodeGraph) : base(pNodeGraph)
 	{
 		SetOrigin(width / 2, height / 2);
 
@@ -23,7 +23,6 @@ class SufficientAgent : NodeGraphAgent
 		{
 			_currentNode = pNodeGraph.nodes[Utils.Random(0, pNodeGraph.nodes.Count)];
 			jumpToNode(_currentNode);
-			/*jumpToNode(pNodeGraph.nodes[Utils.Random(0, pNodeGraph.nodes.Count)]);*/
 		}
 
 		//listen to nodeclicks
