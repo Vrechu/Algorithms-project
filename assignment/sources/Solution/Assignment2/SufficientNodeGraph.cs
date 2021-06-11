@@ -77,7 +77,7 @@ class SufficientNodeGraph : NodeGraph
 	}
 
 	/// <summary>
-	/// adds nodes to each room in specified room list
+	/// returns a list of nodes placed in the center of all rooms
 	/// </summary>
 	/// <param name="doors">room list to add nodes to</param>
 	/// <returns></returns>
@@ -93,7 +93,7 @@ class SufficientNodeGraph : NodeGraph
     }
 
 	/// <summary>
-	/// adds nodes to each door in specified door list
+	/// returns a list of nodes placed on all doors
 	/// </summary>
 	/// <param name="doors">door list to add nodes to</param>
 	/// <returns></returns>

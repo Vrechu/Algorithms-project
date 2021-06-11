@@ -146,6 +146,7 @@
     <Compile Include="sources\Program.cs" />
     <Compile Include="sources\Assignment\PathFinding\PathFinder.cs" />
     <Compile Include="sources\Solution\Assignment1\SufficientDungeon.cs" />
+    <Compile Include="sources\Solution\Assignment2\TiledDungeonView.cs" />
     <Compile Include="sources\Solution\Assignment2\OnGraphWayPointAgent.cs" />
     <Compile Include="sources\Solution\Assignment2\SufficientNodeGraph.cs" />
     <Compile Include="sources\Util\Grid.cs" />

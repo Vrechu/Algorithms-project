@@ -142,7 +142,7 @@ class AlgorithmsAssignment : Game
 		//TODO: Comment out the SampleTiledView again, implement the TiledDungeonView and uncomment it below
 
 		//_tiledView = new SampleTiledView(_dungeon, TileType.GROUND);
-		//_tiledView = new TiledDungeonView(_dungeon, TileType.GROUND); 
+		_tiledView = new TiledDungeonView(_dungeon, TileType.GROUND); 
 		if (_tiledView != null) _tiledView.Generate();
 
 		////////////////////////////////////////////////////////////

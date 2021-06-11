@@ -31,12 +31,12 @@ class OnGraphWayPointAgent : NodeGraphAgent
 
 	protected virtual void onNodeClickHandler(Node pNode)
 	{
-		if (targetNodes.Count > 0 && targetNodes[targetNodes.Count - 1].connections.Contains(pNode)
-			|| _currentNode.connections.Contains(pNode))
+		if ((targetNodes.Count > 0 && targetNodes[targetNodes.Count - 1].connections.Contains(pNode))
+			|| (_currentNode != null && _currentNode.connections.Contains(pNode)))
 		{
 			targetNodes.Add(pNode);
-			Console.WriteLine(pNode);
-		_targetNode = targetNodes[0];
+		    _targetNode = targetNodes[0];
+			_currentNode = null;
 		}
         
 	}
@@ -47,6 +47,8 @@ class OnGraphWayPointAgent : NodeGraphAgent
 		if (_targetNode == null) return;
 
 		MoveToNextNodeOnList();
+
+		//if (_targetNode != null) Console.WriteLine(moveTowardsNode(_targetNode));
 	}
 
 	/// <summary>
@@ -56,14 +58,17 @@ class OnGraphWayPointAgent : NodeGraphAgent
     {
 		if (moveTowardsNode(_targetNode))
 		{
-			_currentNode = _targetNode;
 			targetNodes.Remove(_targetNode);
 			targetNodes.TrimExcess();
 			if (targetNodes.Count > 0)
 			{
 				_targetNode = targetNodes[0];
 			}
-			else _targetNode = null;
+			else 
+			{
+                _currentNode = _targetNode;
+                _targetNode = null;
+			}
 		}
 	}
 }
