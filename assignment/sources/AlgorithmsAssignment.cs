@@ -142,7 +142,7 @@ class AlgorithmsAssignment : Game
 		//TODO: Comment out the SampleTiledView again, implement the TiledDungeonView and uncomment it below
 
 		//_tiledView = new SampleTiledView(_dungeon, TileType.GROUND);
-		_tiledView = new TiledDungeonView(_dungeon, TileType.GROUND); 
+		//_tiledView = new TiledDungeonView(_dungeon, TileType.GROUND); 
 		if (_tiledView != null) _tiledView.Generate();
 
 		////////////////////////////////////////////////////////////
@@ -171,7 +171,7 @@ class AlgorithmsAssignment : Game
 		//TODO: Comment out the SamplePathFinder, implement a RecursivePathFinder and uncomment it below
 
 		//_pathFinder = new SamplePathFinder(_graph);
-		//_pathFinder = new RecursivePathFinder(_graph);
+		_pathFinder = new RecursivePathFinder(_graph);
 
 		//////////////////////////////////////////////////////////////////////////
 		//Assignment 3.1 Sufficient (Mandatory) - BreadthFirst Pathfinding

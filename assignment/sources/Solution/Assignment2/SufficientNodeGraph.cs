@@ -28,21 +28,9 @@ class SufficientNodeGraph : NodeGraph
 
 	protected override void generate()
 	{
-		//Generate nodes, in this sample node graph we just add to nodes manually
-		//of course in a REAL nodegraph (read:yours), node placement should 
-		//be based on the rooms in the dungeon
-
-		//We assume (bad programming practice 1-o-1) there are two rooms in the given dungeon.
-		//The getRoomCenter is a convenience method to calculate the screen space center of a room
-		//nodes.Add(new Node(getRoomCenter(_dungeon.closedRooms[0])));
-		//nodes.Add(new Node(getRoomCenter(_dungeon.closedRooms[1])));
-		//The getDoorCenter is a convenience method to calculate the screen space center of a door
-		//nodes.Add(new Node(getDoorCenter(_dungeon.doors[0])));
-
 		nodes.AddRange(RoomNodes(_dungeon.closedRooms));
 		nodes.AddRange(DoorNodes(_dungeon.doors));
 		ConnectNodes();
-
     }
 
 	/**
