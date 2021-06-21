@@ -31,15 +31,17 @@ class OnGraphWayPointAgent : NodeGraphAgent
 
 	protected virtual void onNodeClickHandler(Node pNode)
 	{
-		if ((targetNodes.Count > 0 && targetNodes[targetNodes.Count - 1].connections.Contains(pNode))
-			|| (_currentNode != null && _currentNode.connections.Contains(pNode)))
-		{
-			targetNodes.Add(pNode);
-		    _targetNode = targetNodes[0];
-			_currentNode = null;
-		}
-        
-	}
+        // week two nodegrapph agent
+        if ((targetNodes.Count > 0 && targetNodes[targetNodes.Count - 1].connections.Contains(pNode))
+            || (_currentNode != null && _currentNode.connections.Contains(pNode)))
+        {
+            targetNodes.Add(pNode);
+            _targetNode = targetNodes[0];
+            _currentNode = null;
+        }
+
+		Console.WriteLine(pNode.connections.Count);
+    }
 
 	protected override void Update()
 	{
@@ -59,7 +61,6 @@ class OnGraphWayPointAgent : NodeGraphAgent
 		if (moveTowardsNode(_targetNode))
 		{
 			targetNodes.Remove(_targetNode);
-			targetNodes.TrimExcess();
 			if (targetNodes.Count > 0)
 			{
 				_targetNode = targetNodes[0];
