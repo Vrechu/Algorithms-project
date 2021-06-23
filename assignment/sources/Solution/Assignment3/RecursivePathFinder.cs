@@ -16,6 +16,12 @@ class RecursivePathFinder : PathFinder
         return Paths[0];
     }    
 
+    /// <summary>
+    /// creates a pathfinding method by exploring every path 
+    /// </summary>
+    /// <param name="position"></param>
+    /// <param name="target"></param>
+    /// <param name="pPath"></param>
     private void MakePaths(Node position, Node target, List<Node> pPath)
     {
         List<Node> path = new List<Node>();

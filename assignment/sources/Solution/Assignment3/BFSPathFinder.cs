@@ -6,18 +6,15 @@ class BFSPathFinder : PathFinder
 {
     public BFSPathFinder(NodeGraph pGraph) : base(pGraph) { }
 
-    private List<List<Node>> _paths = new List<List<Node>>();
     private Queue<List<Node>> _openPaths = new Queue<List<Node>>();
 
     protected override List<Node> generate(Node pFrom, Node pTo)
     {
-        _paths.Clear();        
-        MakePaths(pFrom, pTo, new List<Node>());
-        /*_paths.Sort();*/
-        return _paths[0];
+        _openPaths.Clear();
+        return MakePaths(pFrom, pTo, new List<Node>()); ;
     }
 
-    private void MakePaths(Node position, Node target, List<Node> pPath)
+    private List<Node> MakePaths(Node position, Node target, List<Node> pPath)
     {
         Console.WriteLine("current node: " + position);
         List<Node> path = new List<Node>();
@@ -32,19 +29,16 @@ class BFSPathFinder : PathFinder
         if (position.connections.Contains(target))
         {
             path.Add(target);
-            Console.WriteLine("Path found! length:" + path.Count);            
-            _paths.Add(path);
+            Console.WriteLine("Path found! length:" + path.Count);
+            return path; ;
         }
 
-        else if (_openPaths.Count > 0)
+        while (_openPaths.Count > 0)
         {
-            while (_openPaths.Count > 0)
-            {
-                MakePaths(_openPaths.Peek()[_openPaths.Peek().Count-1], target, _openPaths.Dequeue());
-            }
+            return MakePaths(_openPaths.Peek()[_openPaths.Peek().Count - 1], target, _openPaths.Dequeue());
         }
+        return null;
 
-        else Console.WriteLine("Dead end!");
     }
 
     private List<Node> PathIncludingNode(List<Node> pPath, Node node)
