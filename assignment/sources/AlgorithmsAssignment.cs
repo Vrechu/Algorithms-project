@@ -171,7 +171,8 @@ class AlgorithmsAssignment : Game
 		//TODO: Comment out the SamplePathFinder, implement a RecursivePathFinder and uncomment it below
 
 		//_pathFinder = new SamplePathFinder(_graph);
-		_pathFinder = new RecursivePathFinder(_graph);
+		//_pathFinder = new RecursivePathFinder(_graph);
+		_pathFinder = new BFSPathFinder(_graph);
 
 		//////////////////////////////////////////////////////////////////////////
 		//Assignment 3.1 Sufficient (Mandatory) - BreadthFirst Pathfinding

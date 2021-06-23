@@ -149,6 +149,7 @@
     <Compile Include="sources\Solution\Assignment2\TiledDungeonView.cs" />
     <Compile Include="sources\Solution\Assignment2\OnGraphWayPointAgent.cs" />
     <Compile Include="sources\Solution\Assignment2\SufficientNodeGraph.cs" />
+    <Compile Include="sources\Solution\Assignment3\BFSPathFinder.cs" />
     <Compile Include="sources\Solution\Assignment3\RecursivePathFinder.cs" />
     <Compile Include="sources\Util\Grid.cs" />
     <Compile Include="sources\Util\NodeLabelDrawer.cs" />
