@@ -2,43 +2,46 @@
 using System;
 using System.Collections.Generic;
 
-/**
- * An example of a PathFinder implementation which completes the process by rolling a die 
- * and just returning the straight-as-the-crow-flies path if you roll a 6 ;). 
- */
 class RecursivePathFinder : PathFinder
 {
-
     public RecursivePathFinder(NodeGraph pGraph) : base(pGraph) { }
+
+    private List<List<Node>> Paths = new List<List<Node>>();
 
     protected override List<Node> generate(Node pFrom, Node pTo)
     {
-        return MakePath(pFrom, pTo, new List<Node>(), pFrom) ;
-    }
+        Paths.Clear();
+        MakePaths(pFrom, pTo, new List<Node>());
+        Paths.Sort();
+        return Paths[0];
+    }    
 
-    private List<Node> MakePath(Node position, Node target, List<Node> pPath, Node previousNode)
+    private void MakePaths(Node position, Node target, List<Node> pPath)
     {
-        List<Node> path = pPath;
+        List<Node> path = new List<Node>();
+        path.AddRange(pPath);
         path.Add(position);
-
         Queue<Node> possibleConnections = new Queue<Node>();
         foreach (Node connection in position.connections)
         {
             if (!path.Contains(connection)) possibleConnections.Enqueue(connection);
         }
 
-        Console.WriteLine("Node: " +position.id+  ", possible connections: " + possibleConnections.Count);
+        Console.WriteLine("Node: " + position.id + ", possible connections: " + possibleConnections.Count);
         if (position.connections.Contains(target))
         {
             path.Add(target);
-            return path;
+            Console.WriteLine("Path found! length:" + path.Count);
+            Paths.Add(path);
         }
         else if (possibleConnections.Count > 0)
         {
-            return MakePath(possibleConnections.Dequeue(), target, path, position);
+            while (possibleConnections.Count > 0)
+            {
+                MakePaths(possibleConnections.Dequeue(), target, path);
+            }
         }
-        else return MakePath(position, target, path, position);
-        Console.WriteLine("No Path Possible"); 
+        else Console.WriteLine("Dead end!");
     }
 }
 

@@ -131,7 +131,7 @@ class AlgorithmsAssignment : Game
 		//TODO: Comment out the SampleNodeGraphAgent again, implement an OnGraphWayPointAgent class and uncomment it below
 
 		//_agent = new SampleNodeGraphAgent(_graph);
-		_agent = new OnGraphWayPointAgent(_graph);
+		//_agent = new OnGraphWayPointAgent(_graph);
 
 		////////////////////////////////////////////////////////////
 		//Assignment 2.2 Good (Optional) TiledView
