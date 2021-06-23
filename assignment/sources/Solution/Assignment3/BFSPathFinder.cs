@@ -14,6 +14,13 @@ class BFSPathFinder : PathFinder
         return MakePaths(pFrom, pTo, new List<Node>()); ;
     }
 
+    /// <summary>
+    /// Finds a path on the nodegraph useing BFS
+    /// </summary>
+    /// <param name="position">node the pathfinder is on</param>
+    /// <param name="target">node that the pathfinder wants to reach</param>
+    /// <param name="pPath">list of nodes that are required to reach this node</param>
+    /// <returns>returns the shortest path from the passed in node to the target node</returns>
     private List<Node> MakePaths(Node position, Node target, List<Node> pPath)
     {
         Console.WriteLine("current node: " + position);
@@ -41,6 +48,12 @@ class BFSPathFinder : PathFinder
 
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="pPath">path to add the node to</param>
+    /// <param name="node">node to add to the path</param>
+    /// <returns>returns a new list of nodes with the specified node at the end</returns>
     private List<Node> PathIncludingNode(List<Node> pPath, Node node)
     {
         List<Node> path = new List<Node>();
