@@ -6,15 +6,16 @@ using System.Collections.Generic;
  * Very simple example of a nodegraphagent that walks directly to the node you clicked on,
  * ignoring walls, connections etc.
  */
-class OnGraphWayPointAgent : NodeGraphAgent
+class PathFindingAgent : NodeGraphAgent
 {
 	//Current target to move towards
 	private Node _targetNode = null;
 	private Node _currentNode = null;
 
-	private readonly List<Node> targetNodes = new List<Node>();
+	private readonly List<Node> _targetNodes = new List<Node>();
 
-	public OnGraphWayPointAgent(NodeGraph pNodeGraph) : base(pNodeGraph)
+	private PathFinder _pathFinder;
+	public PathFindingAgent(NodeGraph pNodeGraph) : base(pNodeGraph)
 	{
 		SetOrigin(width / 2, height / 2);
 
@@ -27,19 +28,20 @@ class OnGraphWayPointAgent : NodeGraphAgent
 
 		//listen to nodeclicks
 		pNodeGraph.OnNodeLeftClicked += onNodeClickHandler;
+
+		_pathFinder = new BFSPathFinder(pNodeGraph);
 	}
 
 	protected virtual void onNodeClickHandler(Node pNode)
 	{
-        // week two nodegrapph agent
-        if ((targetNodes.Count > 0 && targetNodes[targetNodes.Count - 1].connections.Contains(pNode))
-            || (_currentNode != null && _currentNode.connections.Contains(pNode)))
-        {
-            targetNodes.Add(pNode);
-            _targetNode = targetNodes[0];
-            _currentNode = null;
-        }
-    }
+		if (_targetNodes.Count == 0)
+		{
+			_targetNodes.AddRange(_pathFinder.Generate(_currentNode, pNode));
+			_targetNode = _targetNodes[0];
+			_currentNode = null;
+		}
+		else _targetNodes.AddRange(_pathFinder.Generate(_targetNodes[_targetNodes.Count-1], pNode));
+	}
 
 	protected override void Update()
 	{
@@ -55,18 +57,18 @@ class OnGraphWayPointAgent : NodeGraphAgent
 	/// Moves to the next node on the targetNodes list. once the target is reached it is removed from the list and the list is trimmed.
 	/// </summary>
 	private void MoveToNextNodeOnList()
-    {
+	{
 		if (moveTowardsNode(_targetNode))
 		{
-			targetNodes.Remove(_targetNode);
-			if (targetNodes.Count > 0)
+			_targetNodes.Remove(_targetNode);
+			if (_targetNodes.Count > 0)
 			{
-				_targetNode = targetNodes[0];
+				_targetNode = _targetNodes[0];
 			}
-			else 
+			else
 			{
-                _currentNode = _targetNode;
-                _targetNode = null;
+				_currentNode = _targetNode;
+				_targetNode = null;
 			}
 		}
 	}

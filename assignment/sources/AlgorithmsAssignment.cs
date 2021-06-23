@@ -132,6 +132,7 @@ class AlgorithmsAssignment : Game
 
 		//_agent = new SampleNodeGraphAgent(_graph);
 		//_agent = new OnGraphWayPointAgent(_graph);
+		_agent = new PathFindingAgent(_graph);
 
 		////////////////////////////////////////////////////////////
 		//Assignment 2.2 Good (Optional) TiledView

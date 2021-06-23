@@ -17,7 +17,7 @@ class RecursivePathFinder : PathFinder
     }    
 
     /// <summary>
-    /// creates a pathfinding method by exploring every path 
+    /// creates a pathfinding method by exploring every path and adding the correct one to the list.
     /// </summary>
     /// <param name="position"></param>
     /// <param name="target"></param>
